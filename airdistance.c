@@ -16,3 +16,22 @@
     double c= 2* atan2(sqrt(a),sqrt(1-a));
     return EARTH_RADIUS* c;
  }
+ int main()
+ {
+    double lat1,lon1,lat2,lon2;
+    printf("Enter the latitude and longitude of the origin:\n");
+    printf("Latitude:");
+    scanf("%lf",&lat1);
+    printf("Longitude:");
+    scanf("%lf",&lon1);
+
+
+    printf("Enter the latitude and longitude of the destination:\n");
+    printf("Latitude:");
+    scanf("%lf",&lat2);
+    printf("Longitude:");
+    scanf("%lf",&lon2);
+    double distance = calculateDistance;
+    printf("Air distance is %.6lf kms\n", distance);
+    return 0;
+ }
