@@ -14,7 +14,7 @@
     double dlon = lon2 -lon1;
     double a= sin(dlat/2)*sin(dlat/2) + cos(lat1) * cos(lat2) *sin(dlon/2) * sin (dlon/2);
     double c= 2 * atan2(sqrt(a),sqrt(1-a));
-    return EARTH_RADIUS* c;
+    return EARTH_RADIUS * c;
  }
  int main()
  {
